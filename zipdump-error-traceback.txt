@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/keith/Git/DidierStevensSuite/zipdump.py", line 5950, in <module>
+    Main()
+  File "/home/keith/Git/DidierStevensSuite/zipdump.py", line 5945, in Main
+    ZIPDump(args[0], options)
+  File "/home/keith/Git/DidierStevensSuite/zipdump.py", line 5431, in ZIPDump
+    file = oZipfile.open(oZipInfo, 'r', C2BIP3(zippassword))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/zipfile.py", line 1606, in open
+    return ZipExtFile(zef_file, mode, zinfo, pwd, True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/zipfile.py", line 830, in __init__
+    self._decompressor = _get_decompressor(self._compress_type)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/zipfile.py", line 729, in _get_decompressor
+    _check_compression(compress_type)
+  File "/usr/lib64/python3.11/zipfile.py", line 709, in _check_compression
+    raise NotImplementedError("That compression method is not supported")
+NotImplementedError: That compression method is not supported
